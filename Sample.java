@@ -1,20 +1,21 @@
 class Animal {
-    String name; // 객체 변수
+    String name;
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 }
 
+class Dog extends Animal {
+
+}
+
+
 public class Sample {
+
     public static void main(String[] args) {
-        Animal cat = new Animal();
-        cat.setName("boby");
-
-        Animal dog = new Animal();
-        dog.setName("happy");
-
-        System.out.println(cat.name);
+        Dog dog = new Dog();
+        dog.setName("Poppy");
         System.out.println(dog.name);
 
     }
